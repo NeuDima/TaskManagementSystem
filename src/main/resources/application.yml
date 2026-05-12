@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/task_management
+    username: task_management
+    password: task_management
+
+jwt:
+  refresh-token-key: '{"kty": "oct","k": "7jR_jQJ_zyQhUiaY-qYIzg"}'
+  refresh-token-name: 'refresh-token'
+  access-token-key: '{"kty": "oct", "k": "sGtrzeXjDLkiEfxEUE55mYylBRC5ZCoalM948eWxaS4"}'
+  access-token-name: '__Host-access-token'
+
+logging:
+  level:
+    org.springframework.security: trace
